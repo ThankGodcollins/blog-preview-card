@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,800;1,600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Figtree', sans-serif;
+}
+:root{
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 50%);
+    --black: hsl(0, 0%, 7%);
+    --fs-paragraph: 16px;
+    --fs-paragraph2: 1.2rem;
+    --fw-small: 600;
+    --fw--large: 800;
+}
+.main_container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--yellow);
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    background-color: var(--white);
+    min-width: 280px;
+    max-width: 350px;
+    border-radius: 20px;
+    box-shadow: 5px 5px;
+    padding: 1rem;
+}
+.card-img-container{
+    overflow: hidden;
+    border-radius: 1rem;
+    margin-block-end: 1rem;
+}
+
+
+.card img{
+    max-width: 100%;
+}
+
+.card-text-container .Learning a{
+    text-decoration: none;
+    background-color: var(--yellow);
+    padding-inline:2.5rem;
+    padding-block: 1rem;
+    border-radius: 0.5rem;
+    color: var(--black);
+    font-weight: var(--fw--large);
+    font-size: var(--fs-paragraph);
+
+}
+.Learning{
+    margin-block-end: 2rem;
+}
+.published{
+    margin-block-end: 1.2rem;
+}
+.published .published_text p{
+    color: var(--grey);
+    font-weight: var(--fw-small);
+}
+.foundtion{
+    margin-block-end: 2rem;
+    color: var(--grey);
+}
+.language{
+    color: var(--grey);
+}
+.avatar_container{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-block-start: 1rem;
+}
